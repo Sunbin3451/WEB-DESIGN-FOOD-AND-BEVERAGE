@@ -1,0 +1,74 @@
+{
+    "coffee": {
+        "id": "coffee",
+        "brandName": "Aura Roast & Pastry",
+        "theme": {
+            "colorPrimary": "#8B5A2B",
+            "colorBg": "#FDFBF7",
+            "colorCard": "#FFFFFF",
+            "colorText": "#2C221E",
+            "fontHeading": "'Lora', serif",
+            "borderRadius": "8px"
+        },
+        "hero": {
+            "badge": "Cà phê thủ công & Bánh ngọt",
+            "title": "Đánh thức giác quan với hạt rang mộc",
+            "description": "Thưởng thức từng giọt Arabica đậm vị kết hợp bánh tươi nướng mỗi sáng trong không gian thanh lịch.",
+            "ctaText": "Đặt bàn trải nghiệm",
+            "image": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=800"
+        },
+        "menu": [
+            {
+                "name": "Cold Brew Cam Vàng",
+                "price": "65.000đ",
+                "desc": "Ủ lạnh 16 tiếng với vỏ cam thanh mát"
+            },
+            {
+                "name": "Flat White Hạnh Nhân",
+                "price": "55.000đ",
+                "desc": "Espresso đậm đà cùng sữa hạt béo ngậy"
+            },
+            {
+                "name": "Croissant Bơ Pháp",
+                "price": "45.000đ",
+                "desc": "Vỏ ngàn lớp nướng mới giòn rụm"
+            }
+        ]
+    },
+    "burger": {
+        "id": "burger",
+        "brandName": "UrbanGrill Bites",
+        "theme": {
+            "colorPrimary": "#E63946",
+            "colorBg": "#141414",
+            "colorCard": "#222222",
+            "colorText": "#F5F5F5",
+            "fontHeading": "'Montserrat', sans-serif",
+            "borderRadius": "20px"
+        },
+        "hero": {
+            "badge": "Fastfood Đậm Vị",
+            "title": "Bùng nổ năng lượng với Burger nướng than",
+            "description": "Thịt bò hảo hạng kết hợp phô mai tan chảy và khoai tây lắc độc quyền, phục vụ nóng hổi tức thì.",
+            "ctaText": "Đặt món ngay",
+            "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800"
+        },
+        "menu": [
+            {
+                "name": "Smash Burger Phô Mai Kép",
+                "price": "89.000đ",
+                "desc": "2 tầng bò nướng cùng cheddar tan chảy"
+            },
+            {
+                "name": "Gà Giòn Cay Sốt Mù Tạt",
+                "price": "79.000đ",
+                "desc": "Ức gà chiên xù rưới sốt cay đặc biệt"
+            },
+            {
+                "name": "Khoai Tây Lắc Truffle",
+                "price": "49.000đ",
+                "desc": "Khoai tây chiên giòn phủ sốt nấm Truffle"
+            }
+        ]
+    }
+}
