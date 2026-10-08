@@ -1,11 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>F&B White Label Landing Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
-<p>testwfwafwasfafwfsafa</p>
+
+    <aside class="theme-switcher">
+        <span>Preset Brand:</span>
+        <button type="button" onclick="switchBrand('coffee')">Cà Phê</button>
+        <button type="button" onclick="switchBrand('burger')">Burger</button>
+    </aside>
+
+    <header class="header">
+        <div class="logo" id="brand-logo"></div>
+        <nav class="nav">
+            <a href="#menu">Thực đơn</a>
+            <a href="#hero" class="btn-primary" id="nav-cta"></a>
+        </nav>
+    </header>
+
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <span class="badge" id="hero-badge"></span>
+            <h1 id="hero-title"></h1>
+            <p id="hero-desc"></p>
+            <a href="#menu" class="btn-primary" id="hero-cta"></a>
+        </div>
+        <div class="hero-visual">
+            <img id="hero-img" src="" alt="Hero Image">
+        </div>
+    </section>
+
+    <section class="menu-section" id="menu">
+        <h2>Món Nổi Bật</h2>
+        <div class="menu-grid" id="menu-container"></div>
+    </section>
+
+    <script src="./assets/js/theme.js"></script>
+    <script src="./assets/js/render.js"></script>
+    <script src="./assets/js/fetch.js"></script>
+    <script src="./assets/js/app.js"></script>
 </body>
+
 </html>
