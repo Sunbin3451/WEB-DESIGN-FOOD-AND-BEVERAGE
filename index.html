@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Landing Page</title>
+    <title id="page-title">Restaurant Landing Page</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -61,39 +61,38 @@
         </div>
     </aside>
 
-    <!-- 1. HEADER (Cố định, có chỉ báo gạch chân linh hoạt) -->
+    <!-- 1. HEADER (Dữ liệu động) -->
     <header class="header">
-        <a href="#hero" class="logo" id="brand-logo">Aura Prime Steakhouse</a>
+        <a href="#hero" class="logo" id="brand-logo"></a>
 
         <nav class="nav-menu" id="nav-links">
-            <!-- Link động được render tại đây -->
+            <!-- Nạp động qua render.js -->
         </nav>
 
-        <a href="#booking" class="btn-highlight" id="nav-cta">Đặt Bàn Trước</a>
+        <a href="#booking" class="btn-highlight" id="nav-cta"></a>
     </header>
 
     <main>
-        <!-- 2. HERO SECTION (Ảnh nền tràn viền với lớp phủ chuyển màu) -->
+        <!-- 2. HERO SECTION (Dữ liệu động) -->
         <section class="hero-full" id="hero">
             <div class="hero-backdrop" id="hero-backdrop"></div>
             <div class="hero-overlay"></div>
 
             <div class="hero-container">
                 <div class="hero-content">
-                    <span class="badge" id="hero-badge">NGHỆ THUẬT BÒ LÊN MEN DRY-AGED</span>
-                    <h1 id="hero-title">Thăng hoa phong vị Steak thượng hạng</h1>
-                    <p id="hero-desc">Trải nghiệm từng thớ thịt bò Wagyu A5 mềm mọng nướng trên than hoa mộc, kết hợp bộ
-                        sưu tập vang cổ điển.</p>
+                    <span class="badge" id="hero-badge"></span>
+                    <h1 id="hero-title"></h1>
+                    <p id="hero-desc"></p>
 
                     <div class="hero-actions">
-                        <a href="#booking" class="btn-primary" id="hero-primary-cta">Đặt Chỗ Ngay</a>
-                        <a href="#menu" class="btn-outline" id="hero-secondary-cta">Khám Phá Menu</a>
+                        <a href="#booking" class="btn-primary" id="hero-primary-cta"></a>
+                        <a href="#menu" class="btn-outline" id="hero-secondary-cta"></a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 3. BRAND STORY SECTION -->
+        <!-- 3. BRAND STORY SECTION (Dữ liệu động) -->
         <section class="story-section" id="story">
             <div class="story-wrapper">
                 <span class="section-tag" id="story-tagline"></span>
@@ -103,38 +102,43 @@
             </div>
         </section>
 
-        <!-- 4. MENU SECTION (Card có ảnh minh họa) -->
+        <!-- 4. MENU SECTION (Dữ liệu động) -->
         <section class="menu-section" id="menu">
             <div class="section-header">
-                <h2>Thực Đơn Tinh Hoa</h2>
-                <p>Lựa chọn những món ăn được thực khách yêu thích nhất</p>
+                <h2 id="menu-title"></h2>
+                <p id="menu-desc"></p>
             </div>
             <div class="menu-grid" id="menu-container">
-                <!-- Render danh sách card món ăn có ảnh động -->
+                <!-- Nạp động danh sách món ăn qua render.js -->
             </div>
         </section>
 
-        <!-- 5. SPACE & ATMOSPHERE SECTION -->
+        <!-- 5. SPACE & ATMOSPHERE SECTION (Bento Grid động) -->
         <section class="space-section" id="space">
-            <div class="section-header">
-                <h2 id="space-title">Không Gian Trải Nghiệm</h2>
-                <p id="space-desc"></p>
+            <div class="space-header">
+                <span class="section-tag" id="space-tagline"></span>
+                <h2 id="space-title"></h2>
+                <p id="space-desc" class="space-subtitle"></p>
             </div>
-            <div class="gallery-grid" id="space-gallery"></div>
+
+            <div class="space-bento-grid" id="space-gallery">
+                <!-- Nạp động Bento Cards qua render.js -->
+            </div>
         </section>
 
-        <!-- 6. CUSTOMER REVIEWS SECTION -->
+        <!-- 6. CUSTOMER REVIEWS SECTION (Dữ liệu động) -->
         <section class="reviews-section" id="reviews">
             <div class="section-header">
-                <h2>Cảm Nhận Thực Khách</h2>
+                <h2 id="reviews-title"></h2>
+                <p id="reviews-desc"></p>
             </div>
             <div class="reviews-grid" id="reviews-container"></div>
         </section>
 
-        <!-- 7. BOOKING SECTION -->
+        <!-- 7. BOOKING SECTION (Dữ liệu động) -->
         <section class="booking-section" id="booking">
             <div class="booking-card">
-                <h2 id="booking-title">Đặt Bàn Trực Tuyến</h2>
+                <h2 id="booking-title"></h2>
                 <p id="booking-desc"></p>
 
                 <form class="booking-form" id="reservation-form">
@@ -152,34 +156,31 @@
                         </select>
                     </div>
                     <textarea rows="3" placeholder="Ghi chú đặc biệt (kỷ niệm, bàn ngoài trời, dị ứng...)"></textarea>
-                    <button type="submit" class="btn-primary btn-block">Xác Nhận Đặt Bàn</button>
+                    <button type="submit" class="btn-primary btn-block" id="booking-submit-btn">Xác Nhận Đặt
+                        Bàn</button>
                 </form>
             </div>
         </section>
     </main>
 
-    <!-- 8. FOOTER (Thiết kế 4 cột theo phong cách tham khảo) -->
+    <!-- 8. FOOTER (Dữ liệu động) -->
     <footer class="footer-modern" id="footer">
         <div class="footer-grid">
             <!-- Cột 1: Brand & Nút Action -->
             <div class="footer-col col-brand">
                 <div class="brand-badge-box">
-                    <span class="brand-letter" id="footer-logo-initial">A</span>
-                    <h3 id="footer-brand-title">Aura Prime</h3>
+                    <span class="brand-letter" id="footer-logo-initial"></span>
+                    <h3 id="footer-brand-title"></h3>
                 </div>
                 <p class="brand-subtext" id="footer-brand-desc"></p>
-                <a href="#booking" class="btn-footer-cta" id="footer-cta-btn">Đặt bàn trải nghiệm</a>
+                <a href="#booking" class="btn-footer-cta" id="footer-cta-btn"></a>
             </div>
 
             <!-- Cột 2: Điều hướng trang -->
             <div class="footer-col col-nav">
-                <h4>Trang chủ</h4>
+                <h4>Điều Hướng</h4>
                 <ul id="footer-nav-list">
-                    <li><a href="#hero">Trang chủ</a></li>
-                    <li><a href="#story">Câu chuyện</a></li>
-                    <li><a href="#menu">Thực đơn</a></li>
-                    <li><a href="#space">Không gian</a></li>
-                    <li><a href="#booking">Đặt bàn</a></li>
+                    <!-- Nạp động qua render.js -->
                 </ul>
             </div>
 
@@ -206,7 +207,7 @@
         </div>
 
         <div class="footer-copyright">
-            <p>&copy 2026 White Label Restaurant Platform. All rights reserved.</p>
+            <p>Web Design 2026 White Label Landing Page. Food & Beverage.</p>
         </div>
     </footer>
 
