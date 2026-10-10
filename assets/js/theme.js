@@ -1,4 +1,4 @@
-function applyTheme(theme) {
+function applyTheme(theme, typography) {
   if (!theme) return;
   const root = document.documentElement;
 
@@ -6,10 +6,46 @@ function applyTheme(theme) {
   root.style.setProperty("--color-text", theme.colorText);
   root.style.setProperty("--color-bg", theme.colorBg);
   root.style.setProperty("--color-card", theme.colorCard);
-  root.style.setProperty("--font-heading", theme.fontHeading);
   root.style.setProperty("--border-radius", theme.borderRadius);
 
+  if (typography) {
+    applyTypography(typography);
+  }
+
   syncPickerInputsWithTheme(theme);
+}
+
+// Hàm áp dụng font chữ và nạp font từ Google CDN theo thời gian thực
+function applyTypography(typography) {
+  if (!typography) return;
+  const root = document.documentElement;
+
+  // 1. Gán biến CSS font vào :root
+  if (typography.fontHeading) {
+    root.style.setProperty("--font-heading", typography.fontHeading);
+  }
+  if (typography.fontBody) {
+    root.style.setProperty("--font-body", typography.fontBody);
+  }
+
+  // 2. Xử lý thẻ nạp font linh hoạt
+  let fontLink = document.getElementById("dynamic-brand-fonts");
+
+  if (typography.googleFontUrl && typography.googleFontUrl.trim() !== "") {
+    // Nếu CÓ đường dẫn font (Google Fonts hoặc file CSS nội bộ)
+    if (!fontLink) {
+      fontLink = document.createElement("link");
+      fontLink.id = "dynamic-brand-fonts";
+      fontLink.rel = "stylesheet";
+      document.head.appendChild(fontLink);
+    }
+    fontLink.href = typography.googleFontUrl;
+  } else {
+    // Nếu KHÔNG dùng font ngoài ("" hoặc null) -> Xóa thẻ link cũ (nếu có) để web tải nhẹ nhất
+    if (fontLink) {
+      fontLink.remove();
+    }
+  }
 }
 
 // ============== Color Custiomzation feature ==============

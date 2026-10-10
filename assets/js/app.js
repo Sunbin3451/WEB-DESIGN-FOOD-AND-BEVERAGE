@@ -1,26 +1,41 @@
 let brands = {};
+let scrollObserver = null;
 
 async function switchBrand(brandKey) {
     const brand = brands[brandKey];
     if (!brand) return;
 
-    applyTheme(brand.theme);
+    applyTheme(brand.theme, brand.typography);
     renderBrandData(brand);
-    initScrollspy(); // Khởi tạo lại scrollspy cho các link mới
+    initScrollspy();
 }
 
 // Hàm khởi tạo Scrollspy bằng IntersectionObserver thuần
 function initScrollspy() {
-    const sections = document.querySelectorAll("section[id], footer[id]");
-    const navLinks = document.querySelectorAll(".nav-menu .nav-link");
+    if (scrollObserver) {
+        scrollObserver.disconnect();
+    }
 
+    const navLinks = document.querySelectorAll(".nav-menu .nav-link");
+    if (!navLinks.length) return;
+
+    // 1. Chỉ theo dõi những section thực sự có link hiển thị trên navbar
+    const navTargets = Array.from(navLinks)
+        .map((link) => link.getAttribute("href"))
+        .filter((href) => href && href.startsWith("#"));
+
+    const sections = navTargets
+        .map((id) => document.querySelector(id))
+        .filter((el) => el !== null);
+
+    // vùng nhận diện khi section xuất hiện trên màn hình (rootMargin điều chỉnh vị trí nhận diện)
     const observerOptions = {
         root: null,
-        rootMargin: "-25% 0px -65% 0px", // Nhận diện khi phần tử nằm ở 1/3 trên của màn hình
+        rootMargin: "-35% 0px -45% 0px",
         threshold: 0
     };
 
-    const observer = new IntersectionObserver((entries) => {
+    scrollObserver = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
                 const id = entry.target.getAttribute("id");
@@ -35,7 +50,8 @@ function initScrollspy() {
         });
     }, observerOptions);
 
-    sections.forEach((sec) => observer.observe(sec));
+    // 3. Sửa đúng tên biến scrollObserver
+    sections.forEach((sec) => scrollObserver.observe(sec));
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
