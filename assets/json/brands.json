@@ -4,14 +4,18 @@
         "brandName": "Aura Prime Steakhouse",
         "theme": {
             "colorPrimary": "#D4AF37",
-            "colorBg": "#121212",
-            "colorCard": "#1C1C1C",
+            "colorBg": "#0d0d0d",
+            "colorCard": "#171717",
             "colorText": "#F5F5F5",
             "fontHeading": "'Lora', serif",
-            "borderRadius": "8px"
+            "borderRadius": "12px"
         },
         "nav": {
             "links": [
+                {
+                    "label": "Trang chủ",
+                    "target": "#hero"
+                },
                 {
                     "label": "Câu Chuyện",
                     "target": "#story"
@@ -27,17 +31,21 @@
                 {
                     "label": "Đánh Giá",
                     "target": "#reviews"
+                },
+                {
+                    "label": "Liên Hệ",
+                    "target": "#footer"
                 }
             ],
             "ctaText": "Đặt Bàn Trước"
         },
         "hero": {
-            "badge": "Nghệ Thuật Bò Lên Men Dry-Aged",
+            "badge": "NGHỆ THUẬT BÒ LÊN MEN DRY-AGED",
             "title": "Thăng hoa phong vị Steak thượng hạng",
             "description": "Trải nghiệm từng thớ thịt bò Wagyu A5 mềm mọng nướng trên than hoa mộc, kết hợp bộ sưu tập vang cổ điển.",
             "primaryCta": "Đặt Chỗ Ngay",
             "secondaryCta": "Khám Phá Menu",
-            "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=1000"
+            "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=1600&auto=format&fit=crop&q=80"
         },
         "story": {
             "tagline": "TINH HOA NGUYÊN LIỆU",
@@ -62,31 +70,35 @@
             {
                 "name": "Tomahawk Black Angus (1kg)",
                 "price": "1.850.000đ",
-                "desc": "Nướng than gỗ sồi kèm bơ tỏi thảo mộc",
-                "tag": "Signature"
+                "desc": "Nướng than gỗ sồi kèm bơ tỏi thảo mộc thơm lừng",
+                "tag": "Signature",
+                "image": "https://images.unsplash.com/photo-1558030006-450675393462?w=600&auto=format&fit=crop&q=80"
             },
             {
                 "name": "Wagyu Striploin A5",
                 "price": "1.250.000đ",
-                "desc": "Thịt bò vân mỡ cẩm thạch áp chảo muối biển",
-                "tag": "Chef's Choice"
+                "desc": "Thịt bò vân mỡ cẩm thạch áp chảo muối biển và tiêu Phú Quốc",
+                "tag": "Chef's Choice",
+                "image": "https://images.unsplash.com/photo-1546964124-0cce460f38ef?w=600&auto=format&fit=crop&q=80"
             },
             {
                 "name": "Nấm Truffle Rừng Đút Lò",
                 "price": "290.000đ",
-                "desc": "Sốt kem béo ngậy kèm bánh mì men tự nhiên",
-                "tag": "Món khai vị"
+                "desc": "Sốt kem béo ngậy kèm bánh mì men tự nhiên giòn rụm",
+                "tag": "Món khai vị",
+                "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&auto=format&fit=crop&q=80"
             },
             {
                 "name": "Rượu Vang Đỏ Bordeaux 2018",
                 "price": "950.000đ",
-                "desc": "Hương quả mọng đậm đà chuẩn vị Pháp",
-                "tag": "Rượu vang"
+                "desc": "Hương quả mọng đậm đà chuẩn vị truyền thống Pháp",
+                "tag": "Rượu vang",
+                "image": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=600&auto=format&fit=crop&q=80"
             }
         ],
         "space": {
             "title": "Không Gian Trải Nghiệm",
-            "desc": "Ánh sáng trầm ấm, kiến trúc gỗ sồi cổ điển và phòng VIP riêng tư tối đa.",
+            "desc": "Ánh sáng trầm ấm, kiến trúc gỗ sồi cổ điển và phòng VIP riêng tư.",
             "images": [
                 "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600",
                 "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=600",
@@ -96,7 +108,7 @@
         "reviews": [
             {
                 "author": "Trần Tuấn Khang",
-                "comment": "Thịt mềm tan trong miệng, hương vị sốt tiêu đen thực sự đẳng cấp.",
+                "comment": "Thịt mềm tan trong miệng, sốt tiêu đen thực sự đẳng cấp.",
                 "rating": 5
             },
             {
@@ -110,10 +122,30 @@
             "desc": "Vui lòng đặt trước ít nhất 2 tiếng để nhà hàng chuẩn bị trải nghiệm chu đáo nhất."
         },
         "footer": {
-            "address": "88 Đường Sáng Tạo, Quận 1, TP. Hồ Chí Minh",
-            "hours": "11:00 - 14:00 | 17:30 - 22:30",
-            "phone": "0901 888 999",
-            "email": "contact@aurasteakhouse.vn"
+            "brandDesc": "Trải nghiệm phong vị ẩm thực thượng hạng với nguyên liệu tuyển chọn khắt khe và không gian tiệc ấm cúng.",
+            "address": "68 Đồng Khởi, Bến Nghé, Quận 1, TP. Hồ Chí Minh",
+            "mapUrl": "https://maps.google.com/?q=68+Dong+Khoi+Quan+1+HCM",
+            "parking": "Có bãi đỗ ô tô và xe máy miễn phí (Valet Parking)",
+            "hours": [
+                "Thứ 2 - Thứ 6: 10:30 - 14:00 | 17:30 - 22:30",
+                "Thứ 7 - Chủ Nhật: 10:00 - 23:00"
+            ],
+            "phone": "1900 6868",
+            "email": "contact@aurasteakhouse.vn",
+            "socials": [
+                {
+                    "name": "Facebook",
+                    "url": "https://facebook.com"
+                },
+                {
+                    "name": "Instagram",
+                    "url": "https://instagram.com"
+                },
+                {
+                    "name": "Youtube",
+                    "url": "https://youtube.com"
+                }
+            ]
         }
     },
     "bistro": {
@@ -121,14 +153,18 @@
         "brandName": "Lumina Green Bistro",
         "theme": {
             "colorPrimary": "#2D6A4F",
-            "colorBg": "#F8F9FA",
-            "colorCard": "#FFFFFF",
-            "colorText": "#1B4332",
+            "colorBg": "#132A20",
+            "colorCard": "#1B4332",
+            "colorText": "#F0FDF4",
             "fontHeading": "'Montserrat', sans-serif",
             "borderRadius": "16px"
         },
         "nav": {
             "links": [
+                {
+                    "label": "Trang chủ",
+                    "target": "#hero"
+                },
                 {
                     "label": "Triết Lý",
                     "target": "#story"
@@ -144,22 +180,26 @@
                 {
                     "label": "Cảm Nhận",
                     "target": "#reviews"
+                },
+                {
+                    "label": "Liên Hệ",
+                    "target": "#footer"
                 }
             ],
             "ctaText": "Đặt Chỗ Ngay"
         },
         "hero": {
-            "badge": "Farm to Table Tươi Lành",
+            "badge": "FARM TO TABLE TƯƠI LÀNH",
             "title": "Ẩm thực xanh giữa lòng phố thị",
-            "description": "Mỗi đĩa ăn được chế biến từ nông sản hữu cơ hái trực tiếp từ nông trại Đà Lạt trong vòng 24 giờ.",
+            "description": "Mỗi đĩa ăn được chế biến từ nông sản hữu cơ hái trực tiếp từ nông trại trong vòng 24 giờ.",
             "primaryCta": "Giữ Chỗ Cuối Tuần",
             "secondaryCta": "Xem Menu Mùa Này",
-            "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=1000"
+            "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=1600&auto=format&fit=crop&q=80"
         },
         "story": {
             "tagline": "TƯƠI SẠCH & LÀNH MẠNH",
             "title": "Từ hạt mầm đến bàn tiệc ấm áp",
-            "desc": "Lumina cam kết không dùng bột ngọt, nói không với thực phẩm biến đổi gen, mang lại sự nhẹ nhàng và thanh sạch cho sức khỏe của bạn.",
+            "desc": "Lumina cam kết nguyên liệu tự nhiên, đem lại sự nhẹ nhàng và thanh sạch cho sức khỏe của bạn.",
             "stats": [
                 {
                     "value": "24h",
@@ -179,26 +219,30 @@
             {
                 "name": "Salad Quinoa Bơ Sáp",
                 "price": "125.000đ",
-                "desc": "Hạt diêm mạch, sốt chanh leo và hạt óc chó",
-                "tag": "Healthy"
+                "desc": "Hạt diêm mạch, sốt chanh leo và hạt óc chó giòn",
+                "tag": "Healthy",
+                "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&auto=format&fit=crop&q=80"
             },
             {
                 "name": "Cá Hồi Na Uy Áp Chảo Măng Tây",
                 "price": "315.000đ",
-                "desc": "Cá hồi tươi phi lê kèm sốt kem thì là thanh ngọt",
-                "tag": "Best Seller"
+                "desc": "Cá hồi phi lê tươi áp chảo xốt kem thì là",
+                "tag": "Best Seller",
+                "image": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=600&auto=format&fit=crop&q=80"
             },
             {
                 "name": "Súp Kem Bí Đỏ Hạnh Nhân",
                 "price": "85.000đ",
-                "desc": "Bí đỏ hữu cơ nấu cùng nước cốt dừa tươi",
-                "tag": "Khai vị"
+                "desc": "Bí đỏ nấu cùng nước cốt dừa tươi thanh béo",
+                "tag": "Khai vị",
+                "image": "https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?w=600&auto=format&fit=crop&q=80"
             },
             {
                 "name": "Nước Ép Cần Tây Táo Xanh",
                 "price": "65.000đ",
-                "desc": "Ép chậm giữ trọn vitamin và khoáng chất",
-                "tag": "Detox"
+                "desc": "Ép chậm giữ trọn vitamin nguyên bản",
+                "tag": "Detox",
+                "image": "https://images.unsplash.com/photo-1622597467836-f3285f2131b7?w=600&auto=format&fit=crop&q=80"
             }
         ],
         "space": {
@@ -227,10 +271,179 @@
             "desc": "Giữ bàn trước để chọn góc view sân vườn yêu thích."
         },
         "footer": {
+            "brandDesc": "Phong cách ẩm thực xanh lành mạnh kết hợp nông sản tươi thu hoạch trong ngày.",
             "address": "45 Vườn An Nhiên, Quận 3, TP. Hồ Chí Minh",
-            "hours": "07:30 - 21:30 hàng ngày",
+            "mapUrl": "https://maps.google.com/?q=45+Vuon+An+Nhien+Quan+3+HCM",
+            "parking": "Có bãi đỗ xe máy và hỗ trợ gửi ô tô cách 50m",
+            "hours": [
+                "Thứ 2 - Thứ 6: 07:30 - 21:30",
+                "Thứ 7 - Chủ Nhật: 07:00 - 22:30"
+            ],
             "phone": "0938 123 456",
-            "email": "hello@luminabistro.vn"
+            "email": "hello@luminabistro.vn",
+            "socials": [
+                {
+                    "name": "Facebook",
+                    "url": "https://facebook.com"
+                },
+                {
+                    "name": "Instagram",
+                    "url": "https://instagram.com"
+                },
+                {
+                    "name": "Youtube",
+                    "url": "https://youtube.com"
+                }
+            ]
+        }
+    },
+    "TEST": {
+        "id": "TEST",
+        "brandName": "TEST",
+        "theme": {
+            "colorPrimary": "#D4AF37",
+            "colorBg": "#0d0d0d",
+            "colorCard": "#171717",
+            "colorText": "#F5F5F5",
+            "fontHeading": "'Lora', serif",
+            "borderRadius": "12px"
+        },
+        "nav": {
+            "links": [
+                {
+                    "label": "Trang chủ",
+                    "target": "#hero"
+                },
+                {
+                    "label": "Câu Chuyện",
+                    "target": "#story"
+                },
+                {
+                    "label": "Thực Đơn",
+                    "target": "#menu"
+                },
+                {
+                    "label": "Không Gian",
+                    "target": "#space"
+                },
+                {
+                    "label": "Đánh Giá",
+                    "target": "#reviews"
+                },
+                {
+                    "label": "Liên Hệ",
+                    "target": "#footer"
+                }
+            ],
+            "ctaText": "Đặt Bàn Trước"
+        },
+        "hero": {
+            "badge": "NGHỆ THUẬT BÒ LÊN MEN DRY-AGED",
+            "title": "Thăng hoa phong vị Steak thượng hạng",
+            "description": "Trải nghiệm từng thớ thịt bò Wagyu A5 mềm mọng nướng trên than hoa mộc, kết hợp bộ sưu tập vang cổ điển.",
+            "primaryCta": "Đặt Chỗ Ngay",
+            "secondaryCta": "Khám Phá Menu",
+            "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=1600&auto=format&fit=crop&q=80"
+        },
+        "story": {
+            "tagline": "TINH HOA NGUYÊN LIỆU",
+            "title": "Hành trình 45 ngày ủ mộc Dry-Aged",
+            "desc": "Tại Aura, mỗi lát cắt steak đều được tuyển chọn nghiêm ngặt từ các trang trại hữu cơ và trải qua buồng ủ muối hồng Himalaya để đạt độ mềm và ngọt đậm đà nhất.",
+            "stats": [
+                {
+                    "value": "45+",
+                    "label": "Ngày ủ men tuyết"
+                },
+                {
+                    "value": "100%",
+                    "label": "Bò Wagyu chuẩn A5"
+                },
+                {
+                    "value": "3★",
+                    "label": "Đẳng cấp ẩm thực"
+                }
+            ]
+        },
+        "menu": [
+            {
+                "name": "Tomahawk Black Angus (1kg)",
+                "price": "1.850.000đ",
+                "desc": "Nướng than gỗ sồi kèm bơ tỏi thảo mộc thơm lừng",
+                "tag": "Signature",
+                "image": "https://images.unsplash.com/photo-1558030006-450675393462?w=600&auto=format&fit=crop&q=80"
+            },
+            {
+                "name": "Wagyu Striploin A5",
+                "price": "1.250.000đ",
+                "desc": "Thịt bò vân mỡ cẩm thạch áp chảo muối biển và tiêu Phú Quốc",
+                "tag": "Chef's Choice",
+                "image": "https://images.unsplash.com/photo-1546964124-0cce460f38ef?w=600&auto=format&fit=crop&q=80"
+            },
+            {
+                "name": "Nấm Truffle Rừng Đút Lò",
+                "price": "290.000đ",
+                "desc": "Sốt kem béo ngậy kèm bánh mì men tự nhiên giòn rụm",
+                "tag": "Món khai vị",
+                "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&auto=format&fit=crop&q=80"
+            },
+            {
+                "name": "Rượu Vang Đỏ Bordeaux 2018",
+                "price": "950.000đ",
+                "desc": "Hương quả mọng đậm đà chuẩn vị truyền thống Pháp",
+                "tag": "Rượu vang",
+                "image": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=600&auto=format&fit=crop&q=80"
+            }
+        ],
+        "space": {
+            "title": "Không Gian Trải Nghiệm",
+            "desc": "Ánh sáng trầm ấm, kiến trúc gỗ sồi cổ điển và phòng VIP riêng tư.",
+            "images": [
+                "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600",
+                "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=600",
+                "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600"
+            ]
+        },
+        "reviews": [
+            {
+                "author": "Trần Tuấn Khang",
+                "comment": "Thịt mềm tan trong miệng, sốt tiêu đen thực sự đẳng cấp.",
+                "rating": 5
+            },
+            {
+                "author": "Lê Mai Uyên",
+                "comment": "Không gian phòng tiệc VIP riêng tư, phục vụ chu đáo ngoài mong đợi.",
+                "rating": 5
+            }
+        ],
+        "booking": {
+            "title": "Đặt Bàn Tiệc Tối",
+            "desc": "Vui lòng đặt trước ít nhất 2 tiếng để nhà hàng chuẩn bị trải nghiệm chu đáo nhất."
+        },
+        "footer": {
+            "brandDesc": "Trải nghiệm phong vị ẩm thực thượng hạng với nguyên liệu tuyển chọn khắt khe và không gian tiệc ấm cúng.",
+            "address": "68 Đồng Khởi, Bến Nghé, Quận 1, TP. Hồ Chí Minh",
+            "mapUrl": "https://maps.google.com/?q=68+Dong+Khoi+Quan+1+HCM",
+            "parking": "Có bãi đỗ ô tô và xe máy miễn phí (Valet Parking)",
+            "hours": [
+                "Thứ 2 - Thứ 6: 10:30 - 14:00 | 17:30 - 22:30",
+                "Thứ 7 - Chủ Nhật: 10:00 - 23:00"
+            ],
+            "phone": "1900 6868",
+            "email": "contact@aurasteakhouse.vn",
+            "socials": [
+                {
+                    "name": "Facebook",
+                    "url": "https://facebook.com"
+                },
+                {
+                    "name": "Instagram",
+                    "url": "https://instagram.com"
+                },
+                {
+                    "name": "Youtube",
+                    "url": "https://youtube.com"
+                }
+            ]
         }
     }
 }
