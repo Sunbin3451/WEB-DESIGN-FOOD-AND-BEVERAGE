@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F&B White Label Landing Page</title>
+    <title>White Label Restaurant</title>
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,700;1,400&family=Montserrat:wght@500;700;800&family=Open+Sans:wght@400;600&display=swap"
         rel="stylesheet">
 
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -17,40 +18,173 @@
 
 <body>
 
+    <!-- Brands switch & Color customization -->
     <aside class="theme-switcher">
-        <span>Preset Brand:</span>
-        <button type="button" onclick="switchBrand('coffee')">Cà Phê</button>
-        <button type="button" onclick="switchBrand('burger')">Burger</button>
+        <span class="switcher-label">Preset:</span>
+        <button type="button" class="btn-preset" onclick="switchBrand('steakhouse')">Steakhouse</button>
+        <button type="button" class="btn-preset" onclick="switchBrand('bistro')">Green Bistro</button>
+
+        <!-- Nút biểu tượng Color Wheel tròn -->
+        <button type="button" id="toggle-color-picker" class="btn-color-wheel" title="Tùy chỉnh màu sắc"></button>
+
+        <!-- Panel chọn màu mini -->
+        <div class="color-picker-popover" id="color-picker-panel">
+            <div class="picker-header">Tùy chỉnh màu sắc</div>
+
+            <div class="picker-item">
+                <span>Màu chính (Primary):</span>
+                <label class="custom-color-swatch">
+                    <input type="color" id="input-color-primary" value="#D4AF37">
+                    <span class="swatch-circle" id="preview-primary"></span>
+                </label>
+            </div>
+
+            <div class="picker-item">
+                <span>Màu chữ (Font Text):</span>
+                <label class="custom-color-swatch">
+                    <input type="color" id="input-color-text" value="#F5F5F5">
+                    <span class="swatch-circle" id="preview-text"></span>
+                </label>
+            </div>
+
+            <div class="picker-item">
+                <span>Nền trang (Background):</span>
+                <label class="custom-color-swatch">
+                    <input type="color" id="input-color-bg" value="#121212">
+                    <span class="swatch-circle" id="preview-bg"></span>
+                </label>
+            </div>
+
+            <div class="picker-item">
+                <span>Màu thẻ (Card):</span>
+                <label class="custom-color-swatch">
+                    <input type="color" id="input-color-card" value="#1C1C1C">
+                    <span class="swatch-circle" id="preview-card"></span>
+                </label>
+            </div>
+        </div>
     </aside>
 
+    <!-- HEADER -->
     <header class="header">
-        <div class="logo" id="brand-logo"></div>
-        <nav class="nav">
-            <a href="#menu">Thực đơn</a>
-            <a href="#hero" class="btn-primary" id="nav-cta"></a>
-        </nav>
+        <a href="#" class="logo" id="brand-logo">Restaurant Logo</a>
+
+        <nav class="nav-menu" id="nav-links"></nav>
+
+        <a href="#booking" class="btn-highlight" id="nav-cta">Đặt Bàn Trước</a>
     </header>
 
-    <section class="hero" id="hero">
-        <div class="hero-content">
-            <span class="badge" id="hero-badge"></span>
-            <h1 id="hero-title"></h1>
-            <p id="hero-desc"></p>
-            <a href="#menu" class="btn-primary" id="hero-cta"></a>
-        </div>
-        <div class="hero-visual">
-            <img id="hero-img" src="" alt="Hero Image">
-        </div>
-    </section>
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <span class="badge" id="hero-badge"></span>
+                <h1 id="hero-title"></h1>
+                <p id="hero-desc"></p>
+                <div class="hero-actions">
+                    <a href="#booking" class="btn-primary" id="hero-primary-cta"></a>
+                    <a href="#menu" class="btn-outline" id="hero-secondary-cta"></a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <img id="hero-img" src="" alt="Món đặc trưng">
+            </div>
+        </section>
 
-    <section class="menu-section" id="menu">
-        <h2>Món Nổi Bật</h2>
-        <div class="menu-grid" id="menu-container"></div>
-    </section>
+        <!-- BRAND STORY SECTION -->
+        <section class="story-section" id="story">
+            <div class="story-wrapper">
+                <span class="section-tag" id="story-tagline"></span>
+                <h2 id="story-title"></h2>
+                <p id="story-desc"></p>
 
+                <div class="stats-grid" id="story-stats"></div>
+            </div>
+        </section>
+
+        <!-- MENU SECTION -->
+        <section class="menu-section" id="menu">
+            <div class="section-header">
+                <h2>Thực Đơn Tinh Hoa</h2>
+                <p>Lựa chọn những món ăn được thực khách yêu thích nhất</p>
+            </div>
+
+            <div class="menu-grid" id="menu-container"></div>
+        </section>
+
+        <!-- SPACE & ATMOSPHERE SECTION -->
+        <section class="space-section" id="space">
+            <div class="section-header">
+                <h2 id="space-title">Không Gian Trải Nghiệm</h2>
+                <p id="space-desc"></p>
+            </div>
+
+            <div class="gallery-grid" id="space-gallery">
+            </div>
+        </section>
+
+        <!-- CUSTOMER REVIEWS SECTION -->
+        <section class="reviews-section" id="reviews">
+            <div class="section-header">
+                <h2>Cảm Nhận Thực Khách</h2>
+            </div>
+            <div class="reviews-grid" id="reviews-container"></div>
+        </section>
+
+        <!-- BOOKING SECTION -->
+        <section class="booking-section" id="booking">
+            <div class="booking-card">
+                <h2 id="booking-title">Đặt Bàn Trực Tuyến</h2>
+                <p id="booking-desc"></p>
+
+                <form class="booking-form" id="reservation-form">
+                    <div class="form-row">
+                        <input type="text" placeholder="Họ và tên của bạn *" required>
+                        <input type="tel" placeholder="Số điện thoại liên hệ *" required>
+                    </div>
+                    <div class="form-row">
+                        <input type="date" required>
+                        <select required>
+                            <option value="">Số lượng khách *</option>
+                            <option value="1-2">1 - 2 người</option>
+                            <option value="3-5">3 - 5 người</option>
+                            <option value="6+">Trên 6 người (Tiệc)</option>
+                        </select>
+                    </div>
+                    <textarea rows="3"
+                        placeholder="Ghi chú đặc biệt (ví dụ: kỷ niệm, bàn ngoài trời, dị ứng...)"></textarea>
+                    <button type="submit" class="btn-primary btn-block">Xác Nhận Đặt Bàn Ngay</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3 id="footer-brand"></h3>
+                <p id="footer-address"></p>
+            </div>
+            <div class="footer-col">
+                <h4>Giờ Mở Cửa</h4>
+                <p id="footer-hours"></p>
+            </div>
+            <div class="footer-col">
+                <h4>Hotline Hỗ Trợ</h4>
+                <p id="footer-phone" class="highlight-text"></p>
+                <p id="footer-email"></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Web Design 2026 White Label Landing Page. White Label Restaurant Platform.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./assets/js/fetch.js"></script>
     <script src="./assets/js/theme.js"></script>
     <script src="./assets/js/render.js"></script>
-    <script src="./assets/js/fetch.js"></script>
     <script src="./assets/js/app.js"></script>
 </body>
 

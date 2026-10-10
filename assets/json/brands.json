@@ -1,74 +1,236 @@
 {
-    "coffee": {
-        "id": "coffee",
-        "brandName": "Aura Roast & Pastry",
+    "steakhouse": {
+        "id": "steakhouse",
+        "brandName": "Aura Prime Steakhouse",
         "theme": {
-            "colorPrimary": "#8B5A2B",
-            "colorBg": "#FDFBF7",
-            "colorCard": "#FFFFFF",
-            "colorText": "#2C221E",
+            "colorPrimary": "#D4AF37",
+            "colorBg": "#121212",
+            "colorCard": "#1C1C1C",
+            "colorText": "#F5F5F5",
             "fontHeading": "'Lora', serif",
             "borderRadius": "8px"
         },
+        "nav": {
+            "links": [
+                {
+                    "label": "Câu Chuyện",
+                    "target": "#story"
+                },
+                {
+                    "label": "Thực Đơn",
+                    "target": "#menu"
+                },
+                {
+                    "label": "Không Gian",
+                    "target": "#space"
+                },
+                {
+                    "label": "Đánh Giá",
+                    "target": "#reviews"
+                }
+            ],
+            "ctaText": "Đặt Bàn Trước"
+        },
         "hero": {
-            "badge": "Cà phê thủ công & Bánh ngọt",
-            "title": "Đánh thức giác quan với hạt rang mộc",
-            "description": "Thưởng thức từng giọt Arabica đậm vị kết hợp bánh tươi nướng mỗi sáng trong không gian thanh lịch.",
-            "ctaText": "Đặt bàn trải nghiệm",
-            "image": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=800"
+            "badge": "Nghệ Thuật Bò Lên Men Dry-Aged",
+            "title": "Thăng hoa phong vị Steak thượng hạng",
+            "description": "Trải nghiệm từng thớ thịt bò Wagyu A5 mềm mọng nướng trên than hoa mộc, kết hợp bộ sưu tập vang cổ điển.",
+            "primaryCta": "Đặt Chỗ Ngay",
+            "secondaryCta": "Khám Phá Menu",
+            "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=1000"
+        },
+        "story": {
+            "tagline": "TINH HOA NGUYÊN LIỆU",
+            "title": "Hành trình 45 ngày ủ mộc Dry-Aged",
+            "desc": "Tại Aura, mỗi lát cắt steak đều được tuyển chọn nghiêm ngặt từ các trang trại hữu cơ và trải qua buồng ủ muối hồng Himalaya để đạt độ mềm và ngọt đậm đà nhất.",
+            "stats": [
+                {
+                    "value": "45+",
+                    "label": "Ngày ủ men tuyết"
+                },
+                {
+                    "value": "100%",
+                    "label": "Bò Wagyu chuẩn A5"
+                },
+                {
+                    "value": "3★",
+                    "label": "Đẳng cấp ẩm thực"
+                }
+            ]
         },
         "menu": [
             {
-                "name": "Cold Brew Cam Vàng",
-                "price": "65.000đ",
-                "desc": "Ủ lạnh 16 tiếng với vỏ cam thanh mát"
+                "name": "Tomahawk Black Angus (1kg)",
+                "price": "1.850.000đ",
+                "desc": "Nướng than gỗ sồi kèm bơ tỏi thảo mộc",
+                "tag": "Signature"
             },
             {
-                "name": "Flat White Hạnh Nhân",
-                "price": "55.000đ",
-                "desc": "Espresso đậm đà cùng sữa hạt béo ngậy"
+                "name": "Wagyu Striploin A5",
+                "price": "1.250.000đ",
+                "desc": "Thịt bò vân mỡ cẩm thạch áp chảo muối biển",
+                "tag": "Chef's Choice"
             },
             {
-                "name": "Croissant Bơ Pháp",
-                "price": "45.000đ",
-                "desc": "Vỏ ngàn lớp nướng mới giòn rụm"
+                "name": "Nấm Truffle Rừng Đút Lò",
+                "price": "290.000đ",
+                "desc": "Sốt kem béo ngậy kèm bánh mì men tự nhiên",
+                "tag": "Món khai vị"
+            },
+            {
+                "name": "Rượu Vang Đỏ Bordeaux 2018",
+                "price": "950.000đ",
+                "desc": "Hương quả mọng đậm đà chuẩn vị Pháp",
+                "tag": "Rượu vang"
             }
-        ]
+        ],
+        "space": {
+            "title": "Không Gian Trải Nghiệm",
+            "desc": "Ánh sáng trầm ấm, kiến trúc gỗ sồi cổ điển và phòng VIP riêng tư tối đa.",
+            "images": [
+                "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600",
+                "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=600",
+                "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600"
+            ]
+        },
+        "reviews": [
+            {
+                "author": "Trần Tuấn Khang",
+                "comment": "Thịt mềm tan trong miệng, hương vị sốt tiêu đen thực sự đẳng cấp.",
+                "rating": 5
+            },
+            {
+                "author": "Lê Mai Uyên",
+                "comment": "Không gian phòng tiệc VIP riêng tư, phục vụ chu đáo ngoài mong đợi.",
+                "rating": 5
+            }
+        ],
+        "booking": {
+            "title": "Đặt Bàn Tiệc Tối",
+            "desc": "Vui lòng đặt trước ít nhất 2 tiếng để nhà hàng chuẩn bị trải nghiệm chu đáo nhất."
+        },
+        "footer": {
+            "address": "88 Đường Sáng Tạo, Quận 1, TP. Hồ Chí Minh",
+            "hours": "11:00 - 14:00 | 17:30 - 22:30",
+            "phone": "0901 888 999",
+            "email": "contact@aurasteakhouse.vn"
+        }
     },
-    "burger": {
-        "id": "burger",
-        "brandName": "UrbanGrill Bites",
+    "bistro": {
+        "id": "bistro",
+        "brandName": "Lumina Green Bistro",
         "theme": {
-            "colorPrimary": "#E63946",
-            "colorBg": "#141414",
-            "colorCard": "#222222",
-            "colorText": "#F5F5F5",
+            "colorPrimary": "#2D6A4F",
+            "colorBg": "#F8F9FA",
+            "colorCard": "#FFFFFF",
+            "colorText": "#1B4332",
             "fontHeading": "'Montserrat', sans-serif",
-            "borderRadius": "20px"
+            "borderRadius": "16px"
+        },
+        "nav": {
+            "links": [
+                {
+                    "label": "Triết Lý",
+                    "target": "#story"
+                },
+                {
+                    "label": "Món Ăn",
+                    "target": "#menu"
+                },
+                {
+                    "label": "Vườn Xanh",
+                    "target": "#space"
+                },
+                {
+                    "label": "Cảm Nhận",
+                    "target": "#reviews"
+                }
+            ],
+            "ctaText": "Đặt Chỗ Ngay"
         },
         "hero": {
-            "badge": "Fastfood Đậm Vị",
-            "title": "Bùng nổ năng lượng với Burger nướng than",
-            "description": "Thịt bò hảo hạng kết hợp phô mai tan chảy và khoai tây lắc độc quyền, phục vụ nóng hổi tức thì.",
-            "ctaText": "Đặt món ngay",
-            "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800"
+            "badge": "Farm to Table Tươi Lành",
+            "title": "Ẩm thực xanh giữa lòng phố thị",
+            "description": "Mỗi đĩa ăn được chế biến từ nông sản hữu cơ hái trực tiếp từ nông trại Đà Lạt trong vòng 24 giờ.",
+            "primaryCta": "Giữ Chỗ Cuối Tuần",
+            "secondaryCta": "Xem Menu Mùa Này",
+            "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=1000"
+        },
+        "story": {
+            "tagline": "TƯƠI SẠCH & LÀNH MẠNH",
+            "title": "Từ hạt mầm đến bàn tiệc ấm áp",
+            "desc": "Lumina cam kết không dùng bột ngọt, nói không với thực phẩm biến đổi gen, mang lại sự nhẹ nhàng và thanh sạch cho sức khỏe của bạn.",
+            "stats": [
+                {
+                    "value": "24h",
+                    "label": "Thu hoạch & vận chuyển"
+                },
+                {
+                    "value": "100%",
+                    "label": "Rau củ hữu cơ USDA"
+                },
+                {
+                    "value": "0",
+                    "label": "Chất bảo quản độc hại"
+                }
+            ]
         },
         "menu": [
             {
-                "name": "Smash Burger Phô Mai Kép",
-                "price": "89.000đ",
-                "desc": "2 tầng bò nướng cùng cheddar tan chảy"
+                "name": "Salad Quinoa Bơ Sáp",
+                "price": "125.000đ",
+                "desc": "Hạt diêm mạch, sốt chanh leo và hạt óc chó",
+                "tag": "Healthy"
             },
             {
-                "name": "Gà Giòn Cay Sốt Mù Tạt",
-                "price": "79.000đ",
-                "desc": "Ức gà chiên xù rưới sốt cay đặc biệt"
+                "name": "Cá Hồi Na Uy Áp Chảo Măng Tây",
+                "price": "315.000đ",
+                "desc": "Cá hồi tươi phi lê kèm sốt kem thì là thanh ngọt",
+                "tag": "Best Seller"
             },
             {
-                "name": "Khoai Tây Lắc Truffle",
-                "price": "49.000đ",
-                "desc": "Khoai tây chiên giòn phủ sốt nấm Truffle"
+                "name": "Súp Kem Bí Đỏ Hạnh Nhân",
+                "price": "85.000đ",
+                "desc": "Bí đỏ hữu cơ nấu cùng nước cốt dừa tươi",
+                "tag": "Khai vị"
+            },
+            {
+                "name": "Nước Ép Cần Tây Táo Xanh",
+                "price": "65.000đ",
+                "desc": "Ép chậm giữ trọn vitamin và khoáng chất",
+                "tag": "Detox"
             }
-        ]
+        ],
+        "space": {
+            "title": "Không Gian Nhà Kính",
+            "desc": "Tràn ngập ánh sáng tự nhiên và cây xanh nhiệt đới.",
+            "images": [
+                "https://images.unsplash.com/photo-1525610553991-2bede1a236e2?w=600",
+                "https://images.unsplash.com/photo-1543007630-9710e4a00a20?w=600",
+                "https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=600"
+            ]
+        },
+        "reviews": [
+            {
+                "author": "Nguyễn Hoàng My",
+                "comment": "Món ăn thanh đạm mà rất vừa vị, không gian nhiều cây xanh thư giãn.",
+                "rating": 5
+            },
+            {
+                "author": "Phạm Bảo Long",
+                "comment": "Cá hồi áp chảo tươi ngon xuất sắc, gia đình tôi rất hài lòng.",
+                "rating": 5
+            }
+        ],
+        "booking": {
+            "title": "Đặt Bàn Trải Nghiệm",
+            "desc": "Giữ bàn trước để chọn góc view sân vườn yêu thích."
+        },
+        "footer": {
+            "address": "45 Vườn An Nhiên, Quận 3, TP. Hồ Chí Minh",
+            "hours": "07:30 - 21:30 hàng ngày",
+            "phone": "0938 123 456",
+            "email": "hello@luminabistro.vn"
+        }
     }
 }
