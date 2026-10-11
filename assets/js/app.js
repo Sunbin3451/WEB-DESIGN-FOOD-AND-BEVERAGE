@@ -63,8 +63,27 @@ document.addEventListener("DOMContentLoaded", async () => {
     // Xử lý Form đặt bàn
     const bookingForm = document.getElementById("reservation-form");
     if (bookingForm) {
+        const phoneInput = bookingForm.querySelector('input[type="tel"]');
+
+        if (phoneInput) {
+            phoneInput.addEventListener("input", function () {
+                this.value = this.value.replace(/\D/g, "");
+
+                if (this.value.length > 10) {
+                    this.value = this.value.slice(0, 10);
+                }
+            });
+        }
+
         bookingForm.addEventListener("submit", (e) => {
             e.preventDefault();
+
+            if (phoneInput && phoneInput.value.length !== 10) {
+                alert("Số điện thoại không hợp lệ! Vui lòng nhập đúng 10 chữ số.");
+                phoneInput.focus();
+                return;
+            }
+
             alert("Cảm ơn quý khách! Yêu cầu đặt bàn đã được gửi thành công.");
             bookingForm.reset();
         });

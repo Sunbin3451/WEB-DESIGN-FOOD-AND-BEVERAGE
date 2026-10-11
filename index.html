@@ -22,7 +22,7 @@
         <span class="switcher-label">Preset:</span>
         <button type="button" class="btn-preset" onclick="switchBrand('steakhouse')">Steakhouse</button>
         <button type="button" class="btn-preset" onclick="switchBrand('bistro')">Green Bistro</button>
-        <button type="button" class="btn-preset" onclick="switchBrand('TEST')">TEST</button>
+        <button type="button" class="btn-preset" onclick="switchBrand('seafood')">Seafood</button>
 
         <!-- Nút Bánh Xe Màu -->
         <button type="button" id="toggle-color-picker" class="btn-color-wheel" title="Tùy chỉnh màu sắc"></button>
@@ -137,17 +137,13 @@
 
                 <form class="booking-form" id="reservation-form">
                     <div class="form-row">
-                        <input type="text" placeholder="Họ và tên *" required>
-                        <input type="tel" placeholder="Số điện thoại *" required max="11">
-                    </div>
-                    <div class="form-row">
-                        <input type="date" required>
-                        <select required>
-                            <option value="">Số lượng khách *</option>
-                            <option value="1-2">1 - 2 người</option>
-                            <option value="3-5">3 - 5 người</option>
-                            <option value="6+">Trên 6 người (Tiệc)</option>
-                        </select>
+                        <input type="text" id="booking-name" placeholder="Họ và tên *" required>
+
+                        <input type="tel" 
+                        id="booking-phone" 
+                        placeholder="Số điện thoại (10 số) *" 
+                        maxlength="10"
+                        inputmode="numeric" pattern="0[0-9]{9}" required>
                     </div>
                     <textarea rows="3" placeholder="Ghi chú đặc biệt (kỷ niệm, bàn ngoài trời, dị ứng...)"></textarea>
                     <button type="submit" class="btn-primary btn-block" id="booking-submit-btn">Xác Nhận Đặt
