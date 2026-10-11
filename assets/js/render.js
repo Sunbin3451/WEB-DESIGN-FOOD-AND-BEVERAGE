@@ -3,7 +3,7 @@ function renderBrandData(brand) {
 
     // Tiêu đề tab trình duyệt
     const pageTitle = document.getElementById("page-title");
-    if (pageTitle) pageTitle.textContent = `${brand.brandName} | Restaurant Experience`;
+    if (pageTitle) pageTitle.textContent = `${brand.brandName}`;
 
     // Header
     const brandLogo = document.getElementById("brand-logo");
