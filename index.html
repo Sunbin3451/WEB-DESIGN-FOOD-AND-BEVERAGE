@@ -17,7 +17,7 @@
 
 <body>
 
-    <!-- Floating Switcher & Color Customizer -->
+    <!-- Preset Switcher & Color Customizer -->
     <aside class="theme-switcher">
         <span class="switcher-label">Preset:</span>
         <button type="button" class="btn-preset" onclick="switchBrand('steakhouse')">Steakhouse</button>
@@ -61,19 +61,17 @@
         </div>
     </aside>
 
-    <!-- 1. HEADER (Dữ liệu động) -->
+    <!-- 1. HEADER -->
     <header class="header">
         <a href="#hero" class="logo" id="brand-logo"></a>
 
-        <nav class="nav-menu" id="nav-links">
-            <!-- Nạp động qua render.js -->
-        </nav>
+        <nav class="nav-menu" id="nav-links"></nav>
 
         <a href="#booking" class="btn-highlight" id="nav-cta"></a>
     </header>
 
     <main>
-        <!-- 2. HERO SECTION (Dữ liệu động) -->
+        <!-- 2. HERO SECTION -->
         <section class="hero-full" id="hero">
             <div class="hero-backdrop" id="hero-backdrop"></div>
             <div class="hero-overlay"></div>
@@ -92,7 +90,7 @@
             </div>
         </section>
 
-        <!-- 3. BRAND STORY SECTION (Dữ liệu động) -->
+        <!-- 3. BRAND STORY SECTION -->
         <section class="story-section" id="story">
             <div class="story-wrapper">
                 <span class="section-tag" id="story-tagline"></span>
@@ -102,18 +100,16 @@
             </div>
         </section>
 
-        <!-- 4. MENU SECTION (Dữ liệu động) -->
+        <!-- 4. MENU SECTION -->
         <section class="menu-section" id="menu">
             <div class="section-header">
                 <h2 id="menu-title"></h2>
                 <p id="menu-desc"></p>
             </div>
-            <div class="menu-grid" id="menu-container">
-                <!-- Nạp động danh sách món ăn qua render.js -->
-            </div>
+            <div class="menu-grid" id="menu-container"></div>
         </section>
 
-        <!-- 5. SPACE & ATMOSPHERE SECTION (Bento Grid động) -->
+        <!-- 5. SPACE & ATMOSPHERE SECTION -->
         <section class="space-section" id="space">
             <div class="space-header">
                 <span class="section-tag" id="space-tagline"></span>
@@ -121,12 +117,10 @@
                 <p id="space-desc" class="space-subtitle"></p>
             </div>
 
-            <div class="space-bento-grid" id="space-gallery">
-                <!-- Nạp động Bento Cards qua render.js -->
-            </div>
+            <div class="space-bento-grid" id="space-gallery"></div>
         </section>
 
-        <!-- 6. CUSTOMER REVIEWS SECTION (Dữ liệu động) -->
+        <!-- 6. CUSTOMER REVIEWS SECTION -->
         <section class="reviews-section" id="reviews">
             <div class="section-header">
                 <h2 id="reviews-title"></h2>
@@ -135,7 +129,7 @@
             <div class="reviews-grid" id="reviews-container"></div>
         </section>
 
-        <!-- 7. BOOKING SECTION (Dữ liệu động) -->
+        <!-- 7. BOOKING SECTION -->
         <section class="booking-section" id="booking">
             <div class="booking-card">
                 <h2 id="booking-title"></h2>
@@ -144,7 +138,7 @@
                 <form class="booking-form" id="reservation-form">
                     <div class="form-row">
                         <input type="text" placeholder="Họ và tên *" required>
-                        <input type="tel" placeholder="Số điện thoại *" required>
+                        <input type="tel" placeholder="Số điện thoại *" required max="11">
                     </div>
                     <div class="form-row">
                         <input type="date" required>
@@ -163,10 +157,10 @@
         </section>
     </main>
 
-    <!-- 8. FOOTER (Dữ liệu động) -->
+    <!-- 8. FOOTER -->
     <footer class="footer-modern" id="footer">
         <div class="footer-grid">
-            <!-- Cột 1: Brand & Nút Action -->
+            <!-- Cột 1 -->
             <div class="footer-col col-brand">
                 <div class="brand-badge-box">
                     <span class="brand-letter" id="footer-logo-initial"></span>
@@ -176,15 +170,14 @@
                 <a href="#booking" class="btn-footer-cta" id="footer-cta-btn"></a>
             </div>
 
-            <!-- Cột 2: Điều hướng trang -->
+            <!-- Cột 2 -->
             <div class="footer-col col-nav">
                 <h4>Điều Hướng</h4>
-                <ul id="footer-nav-list">
-                    <!-- Nạp động qua render.js -->
-                </ul>
+
+                <ul id="footer-nav-list"></ul>
             </div>
 
-            <!-- Cột 3: Địa chỉ & Giờ mở cửa -->
+            <!-- Cột 3 -->
             <div class="footer-col col-contact">
                 <div class="contact-block">
                     <p class="contact-address" id="footer-address-text"></p>
@@ -199,7 +192,7 @@
                 </div>
             </div>
 
-            <!-- Cột 4: Mạng xã hội -->
+            <!-- Cột 4 -->
             <div class="footer-col col-social">
                 <h4>Kết nối</h4>
                 <div class="social-links" id="footer-social-links"></div>
@@ -207,7 +200,7 @@
         </div>
 
         <div class="footer-copyright">
-            <p>Web Design 2026 White Label Landing Page. Food & Beverage.</p>
+            <p>Web Design 2026 White Label Landing Page. CHẠY DEADLINE CHO VUI.</p>
         </div>
     </footer>
 

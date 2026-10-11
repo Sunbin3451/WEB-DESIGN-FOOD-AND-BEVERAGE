@@ -10,7 +10,7 @@ async function switchBrand(brandKey) {
     initScrollspy();
 }
 
-// Hàm khởi tạo Scrollspy bằng IntersectionObserver thuần
+// Hàm khởi tạo Scrollspy
 function initScrollspy() {
     if (scrollObserver) {
         scrollObserver.disconnect();
@@ -19,7 +19,7 @@ function initScrollspy() {
     const navLinks = document.querySelectorAll(".nav-menu .nav-link");
     if (!navLinks.length) return;
 
-    // 1. Chỉ theo dõi những section thực sự có link hiển thị trên navbar
+    // Chỉ theo dõi những section thực sự có link hiển thị trên navbar
     const navTargets = Array.from(navLinks)
         .map((link) => link.getAttribute("href"))
         .filter((href) => href && href.startsWith("#"));
@@ -50,7 +50,6 @@ function initScrollspy() {
         });
     }, observerOptions);
 
-    // 3. Sửa đúng tên biến scrollObserver
     sections.forEach((sec) => scrollObserver.observe(sec));
 }
 

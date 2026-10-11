@@ -1,5 +1,5 @@
 /* ==========================================================================
-   1. VARIABLES & RESET
+    COLORS & BASE STYLES
    ========================================================================== */
 :root {
     --color-primary: #D4AF37;
@@ -48,7 +48,7 @@ a {
 }
 
 /* ==========================================================================
-   2. HEADER & ANIMATED UNDERLINE NAV
+    HEADER
    ========================================================================== */
 .header {
     position: sticky;
@@ -129,7 +129,7 @@ a {
 }
 
 /* ==========================================================================
-   3. HERO SECTION
+    HERO SECTION
    ========================================================================== */
 .hero-full {
     position: relative;
@@ -227,7 +227,7 @@ a {
 }
 
 /* ==========================================================================
-   4. MENU SECTION
+    MENU SECTION
    ========================================================================== */
 section {
     padding: 90px 7%;
@@ -319,7 +319,7 @@ section {
 }
 
 /* ==========================================================================
-   5. STORY, SPACE, REVIEWS & BOOKING
+    STORY SECTION
    ========================================================================== */
 .story-section {
     background-color: var(--color-card);
@@ -357,13 +357,12 @@ section {
 }
 
 /* ==========================================================================
-   5. SPACE SECTION
+    SPACE SECTION
    ========================================================================== */
 .space-section {
     padding: 60px 7% 90px;
 }
 
-/* Cụm Header căn giữa hoàn hảo */
 .space-header {
     text-align: center;
     max-width: 750px;
@@ -373,7 +372,6 @@ section {
     align-items: center;
 }
 
-/* Tagline nhỏ màu vàng ở trên */
 .space-header .section-tag {
     display: inline-block;
     color: var(--color-primary);
@@ -383,7 +381,6 @@ section {
     margin-bottom: 14px;
 }
 
-/* Tiêu đề chính lớn */
 .space-header h2 {
     font-size: 2.5rem;
     line-height: 1.25;
@@ -391,7 +388,6 @@ section {
     font-family: var(--font-heading);
 }
 
-/* Đoạn mô tả phụ - Chỉ nhắm đúng .space-header p, không làm ảnh hưởng ảnh bên dưới */
 .space-header p.space-subtitle {
     font-size: 1.05rem;
     line-height: 1.8;
@@ -400,18 +396,15 @@ section {
     margin: 0 auto;
 }
 
-/* Layout Bento Grid */
 .space-bento-grid {
     display: grid;
     grid-template-columns: 1.35fr 1fr;
     grid-template-rows: 270px 270px;
-    /* Tăng từ 240px lên 270px cho thoáng bố cục */
     gap: 24px;
     max-width: 1240px;
     margin: 0 auto;
 }
 
-/* Thẻ Card */
 .space-card {
     position: relative;
     border-radius: var(--border-radius);
@@ -422,7 +415,6 @@ section {
     height: 100%;
 }
 
-/* Card chính bên trái chiếm trọn 2 hàng */
 .space-card.featured {
     grid-row: span 2;
 }
@@ -439,7 +431,6 @@ section {
     transform: scale(1.06);
 }
 
-/* Lớp phủ chuyển màu trên ảnh */
 .space-card-overlay {
     position: absolute;
     inset: 0;
@@ -454,7 +445,6 @@ section {
     z-index: 2;
 }
 
-/* Nhãn Tag trên góc ảnh */
 .space-badge {
     align-self: flex-start;
     background: rgba(13, 13, 13, 0.65);
@@ -469,7 +459,6 @@ section {
     letter-spacing: 0.04em;
 }
 
-/* Thông tin chân ảnh: Khóa chặt text-align: left để không bao giờ bị lệch */
 .space-info {
     text-align: left;
 }
@@ -491,10 +480,11 @@ section {
     line-height: 1.5;
     max-width: 450px;
     margin: 0;
-    /* Xóa bỏ margin thừa, giữ thẳng hàng bên trái */
 }
 
-/* -------------------------------------------------------- */
+/* ==========================================================================
+    REVIEWS & BOOKING
+   ========================================================================== */
 
 .reviews-grid {
     display: grid;
@@ -556,7 +546,7 @@ section {
 }
 
 /* ==========================================================================
-   6. FOOTER
+    FOOTER
    ========================================================================== */
 .footer-modern {
     background-color: #080808;
@@ -578,7 +568,6 @@ section {
     letter-spacing: 0.02em;
 }
 
-/* Cột 1: Brand badge & Button */
 .brand-badge-box {
     display: flex;
     align-items: center;
@@ -626,7 +615,6 @@ section {
     transform: translateY(-2px);
 }
 
-/* Cột 2: Navigation Links */
 .col-nav ul {
     list-style: none;
 }
@@ -646,7 +634,6 @@ section {
     color: var(--color-primary);
 }
 
-/* Cột 3: Contact Details */
 .contact-block {
     margin-bottom: 18px;
 }
@@ -681,7 +668,6 @@ section {
     line-height: 1.5;
 }
 
-/* Cột 4: Socials */
 .social-links a {
     display: block;
     font-size: 0.92rem;
@@ -704,7 +690,7 @@ section {
 }
 
 /* ==========================================================================
-   7. COLOR WHEEL & SWITCHER POPUP
+    COLOR WHEEL & SWITCHER POPUP
    ========================================================================== */
 .theme-switcher {
     position: fixed;
@@ -841,7 +827,7 @@ button.btn-color-wheel:active {
 }
 
 /* ==========================================================================
-   8. RESPONSIVE
+    RESPONSIVE
    ========================================================================== */
 @media (max-width: 900px) {
     .footer-grid {
@@ -852,7 +838,6 @@ button.btn-color-wheel:active {
         font-size: 2.5rem;
     }
 
-    /* Responsive cho Bento Grid trên Tablet */
     .space-bento-grid {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
